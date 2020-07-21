@@ -1,0 +1,16 @@
+
+Attended by: Atharv
+
+MOM
+Introduction and discussion on problem statments. 
+Develop required skill set and acclimatize with S3 bucket and EC2 instance on AWS.
+Understand how operations in place work on S3 bucket and data pipeline between S3 and EC2.
+Discussed the requirement of Label me for the task and can any other library be used for more efficient and accurate annotation. 
+
+Task for nex week (21 Jul - 28 Jul)
+Atharv: Create AWS account with .edu email address and play with S3 and EC2 functionalities. 
+Download labelme on local machine and try to annotate some images with relevant scenary to autonomus driving on local machine.
+Create one page document stating limitations and specifications of Label me.
+Also state steps to setup and access S3 bucket from EC2 instance.
+
+Some limitations may include maximums classes that can be annoted, maximum image size that can be handled, image formats that can be handled etc.
