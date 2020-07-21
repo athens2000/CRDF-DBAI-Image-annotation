@@ -1,5 +1,5 @@
 
-Attended by: Atharv
+Attended by: Atharva
 
 MOM
 Introduction and discussion on problem statments. 
@@ -8,7 +8,7 @@ Understand how operations in place work on S3 bucket and data pipeline between S
 Discussed the requirement of Label me for the task and can any other library be used for more efficient and accurate annotation. 
 
 Task for nex week (21 Jul - 28 Jul)
-Atharv: Create AWS account with .edu email address and play with S3 and EC2 functionalities. 
+Atharva: Create AWS account with .edu email address and play with S3 and EC2 functionalities. 
 Download labelme on local machine and try to annotate some images with relevant scenary to autonomus driving on local machine.
 Create one page document stating limitations and specifications of Label me.
 Also state steps to setup and access S3 bucket from EC2 instance.
