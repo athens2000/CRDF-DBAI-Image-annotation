@@ -1,0 +1,12 @@
+Attended by: Atharva
+
+MOM
+No significant work done.
+
+Task for nex week (21 Jul - 28 Jul)
+Atharva: Create AWS account with .edu email address and play with S3 and EC2 functionalities. 
+Download labelme on local machine and try to annotate some images with relevant scenary to autonomus driving on local machine.
+Create one page document stating limitations and specifications of Label me.
+Also state steps to setup and access S3 bucket from EC2 instance.
+
+Some limitations may include maximums classes that can be annoted, maximum image size that can be handled, image formats that can be handled etc.
