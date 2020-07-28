@@ -9,3 +9,6 @@ Project members: Atharva Dongare
 Timeline: 20th July 2020 - 19th December 2020
 
 Problem Statment: Annotation automation using Labelme : Automate annotation process beginning with integration of s3 with labelme. The s3 bucket should be accessible as a folder in labelme so that any data to be annotated or data that is annotated can be retrieved/put directly. 
+
+
+Google Drive: https://drive.google.com/drive/u/0/folders/1TGAljei57SJqJfbBUB8vhQ4kVKP3vo7h
