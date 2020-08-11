@@ -12,6 +12,8 @@ Discussed life cycle of the modified LABELME as discussed with Shubaditya.
 Discuss with Shubaditya - Are annotated images to be stored in different folder on S3 bucket? How to distiguish between images?
                           User sees only unannotated images while downloading? Or downloaded pre determined number of un annoted images with no user selection?
                           While uploading the images, should user be given the choice which images to upload? or upload the entire chunk and delete from local machine.
+                            We can code in an interlock, such that upload will not take place until all images in the chunk are annotated.
+                            Similarly another interlock would be, user cannot download more images until he has finished the current chunk.
                           AWS login should be each time user opens app? or just one time when installs app?
                           
                           
