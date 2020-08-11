@@ -1,0 +1,19 @@
+Attended by: Atharva
+
+MOM
+Discussed life cycle of the modified LABELME as discussed with Shubaditya.
+- Login page for AWS credentials.
+- Download n images chosen by the user to temporary folder on local device.
+- Manually annotate and save each image.
+- At saving image, run a customised script (.py file) to check annotation. 
+  if the scripts returns successfully, then save else raise error.
+- After annotation, user choses the images and uploads back to S3 bucket.
+
+Discuss with Shubaditya - Are annotated images to be stored in different folder on S3 bucket?
+                          User sees only unannotated images while downloading. How to distiguish between images?
+                          
+                          
+Task (11 Aug - 18 Aug)
+Familiarise with boto and develop scripts to upload and download data to S3 bucket.
+Analyse and choose best functionality provided by boto for this application.
+Go through LABELME repo and understand which files to edit to include the said additional functionalities.
