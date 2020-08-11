@@ -9,8 +9,8 @@ Discussed life cycle of the modified LABELME as discussed with Shubaditya.
   if the scripts returns successfully, then save else raise error.
 - After annotation, user choses the images and uploads back to S3 bucket.
 
-Discuss with Shubaditya - Are annotated images to be stored in different folder on S3 bucket?
-                          User sees only unannotated images while downloading. How to distiguish between images?
+Discuss with Shubaditya - Are annotated images to be stored in different folder on S3 bucket? How to distiguish between images?
+                          User sees only unannotated images while downloading? Or downloaded pre determined number of un annoted images with no user selection?
                           While uploading the images, should user be given the choice which images to upload? or upload the entire chunk and delete from local machine.
                           AWS login should be each time user opens app? or just one time when installs app?
                           
