@@ -1,0 +1,33 @@
+
+Attended by: Atharva
+
+MOM
+- User should be able to choose which files to download.
+- Upload all files once annotated.
+- Customised saving script recieved from dbai.
+- Login to be from ui. [assume command line login not present/ not expected]
+
+Forked LABELME repo. Analysed and created place holder functions to insert the relevant code.
+
+Annoated few images to have a better understanding of the process followed by dbai.
+Observations -  Only point annotation is used. 
+                New images annotation is just modification of old annotation. ie 'keep annotated points' option is used.
+                98 annotation points. Fixed structure of points.
+                flags.txt needed to be loaded from command line while launching the program.
+                output dir needed to be manually chosen.
+  
+Discuss with Shubaditya - User chooses which files to download. Just show file names or thumbnails? Basically user will need to choose all images manually
+                          conceptual lifecyle doubt: if user hasnt signed in to AWS, but has images downloaded from previous instance, should they be displayed?
+                                                     if user has not annotated all downloaded images in chunck, should an upload be allowed?
+                                                     if user already has some images on local machine, should a download be allowed?
+                          Should there be an upper limit to number of images downloaded at one time?
+                          Some features that can be added - Add point annotation to side bar as it is used most frequently.
+                                                            Add flags.txt file by default.
+                                                            Remove unneccesaary icons from side bar for a cleaner look.
+                            
+                          
+                          
+Task (18 Aug - 25 Aug)
+Expected boto functionality - AWS S3 login, list S3 onjects, download, upload.
+Develop exception handling in the boto funtionality. Some exceptions are incorrect credentials, network error etc
+Understand LABELME repo and code strucrure.
