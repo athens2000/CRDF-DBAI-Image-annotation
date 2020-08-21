@@ -1,0 +1,29 @@
+1. Validation rules should  be fetched from config file 
+    Please elaborate. Which config file? What exactly are validation rules?
+
+2. Check if Json is valid 
+
+3. Check If Json has any annotation done that is [’shapes'] attribute  - Done
+
+4. Check if all points mention in config are present  (point annotation) - Done
+
+5. Check for annotation labels and is case sensitive - Done
+
+6. Check for duplicate and missing points - Done
+
+7. Validate “imagePath" and “imageData” attribute and its data type 
+    What is valid path? is it the same where .json should be stored?
+    for "imageData", current implementation checks only if it exists. Do we need to extract any more information from it?
+
+8. Check if image at “imagePath" exists 
+
+9. Check if annotation coordinate are out side image shape 
+    Is it outside image shape or outside annotated face rectangle?
+
+10. Basic point(single coordinate ) and rectangle (two coordinate ) annotation validation  
+
+11. File name (without extension) should be same for image , json and “imagePath” attribute in Json. 
+    Proposed solution -> while saving .json, user will not be given the freedom to modify file name. 
+    Hence by default it will stored as <image_name>.json
+
+12. Check image dimension with json attributes 
