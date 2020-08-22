@@ -1,29 +1,51 @@
+General flow for the checks
+    If there are multiple discrepancies in .json file, How should it be displayed?
+    Idea 1: Pop message displays the first error it encounters. User solves that error and when again trying to save, next error message pops up.
+    Idea 2: The script finds all possible errors and displays to the user all in the same pop up.
+    Any other ideas? Let us know
+
 1. Validation rules should  be fetched from config file 
     Please elaborate. Which config file? What exactly are validation rules?
 
-2. Check if Json is valid 
+2. Check if Json is valid - Done
+    Checks if the metadata is a valid json format.
 
 3. Check If Json has any annotation done that is [’shapes'] attribute  - Done
+    If 0 shapes are present, message generated is 'annotation not started'
 
 4. Check if all points mention in config are present  (point annotation) - Done
+    Checks for 'point' shape for 98 points and their respective labels
 
 5. Check for annotation labels and is case sensitive - Done
+    Checks for 'rectangle' shape with label aas 'face'
 
 6. Check for duplicate and missing points - Done
+    message generates is all missing, duplicate or completely invalid points.
+    invalid points exampls: point with label '671'
+ 
+Extra check: check for other unwanted polygons and rectangles - Done
+    checks if extra 'rectangle' shapes or any other polygons are present.
 
 7. Validate “imagePath" and “imageData” attribute and its data type 
     What is valid path? is it the same where .json should be stored?
     for "imageData", current implementation checks only if it exists. Do we need to extract any more information from it?
 
 8. Check if image at “imagePath" exists 
+    What exactly in 'imagePath'? Should the end result be that .json and the image are in the same directory?
 
 9. Check if annotation coordinate are out side image shape 
     Is it outside image shape or outside annotated face rectangle?
 
-10. Basic point(single coordinate ) and rectangle (two coordinate ) annotation validation  
+10. Basic point(single coordinate ) and rectangle (two coordinate ) annotation validation  - Done
 
 11. File name (without extension) should be same for image , json and “imagePath” attribute in Json. 
     Proposed solution -> while saving .json, user will not be given the freedom to modify file name. 
     Hence by default it will stored as <image_name>.json
 
-12. Check image dimension with json attributes 
+12. Check image dimension with json attributes - Done
+    Checks 640 x 480.
+    What should happen if image is of different size?
+
+Extra check: Flags .txt file is loaded. - Done
+    Checks if flags attribute is present in json
+    Should it also check for number of flags present?
